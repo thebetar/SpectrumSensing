@@ -8,12 +8,11 @@ The aim of this project will be to take recordings of different frequencies and 
 
 The finished model will take as an input the current occupancy of multiple frequencies and some other features, currently we think this would be time, geolocation and date. The model will then predict the occupancy of each frequency and return this as a result providing an easy way to find the best frequency to form a connection over due to it's low occupancy rate.
 
-
 # Resources
 
 ## Repositories
 - https://github.com/Darth-Kronos/Spectrum-Sensing
-- https://github.com/vineeths96/Spectrum-Sensing-for-Cognitive-Radio`
+- https://github.com/vineeths96/Spectrum-Sensing-for-Cognitive-Radio
 - https://github.com/wineslab/deepsense-spectrum-sensing-datasets
 
 ## Papers
@@ -21,3 +20,4 @@ The finished model will take as an input the current occupancy of multiple frequ
 - https://doi.org/10.1186/s13638-020-01870-7
 - https://www.elastic.co/what-is/large-language-models#what-is-the-difference-between-large-language-models-and-generative-ai
 - https://arxiv.org/pdf/1804.00709
+- https://www.mdpi.com/2079-9292/13/14/2705
