@@ -14,7 +14,7 @@ Some additional information for understanding the taken approach and gotten resu
 
 -   Signal strength is meassured in dBM, it is impacted by distance to the source and interference of other signals at the same frequency
 -   Signal strengths are meassured starting from 0 which is perfected with zero interference and distance, which is not possible to achieve to a big negative number, overall -50dBM or higher is considered excellent then till -67dBM is considered good, below this and problems start to arise and below -80dBM connection will become unreliable.
--
+-   Signal to noise ratio is described in dB, for instance 10dB means that the signal is 10 times stronger than the noise. So the higher the better the signal is received.
 
 # Resources
 
@@ -36,3 +36,12 @@ Some additional information for understanding the taken approach and gotten resu
 -   https://www.elastic.co/what-is/large-language-models#what-is-the-difference-between-large-language-models-and-generative-ai
 -   https://arxiv.org/pdf/1804.00709
 -   https://www.mdpi.com/2079-9292/13/14/2705
+
+## Tools
+
+-   https://www.gnuradio.org/
+-   https://pytorch.org/
+
+# Todo
+
+-   Display the occupancy by frequency and time in a heatmap
