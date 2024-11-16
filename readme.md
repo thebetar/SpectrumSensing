@@ -18,6 +18,11 @@ Some additional information for understanding the taken approach and gotten resu
 
 # Resources
 
+## Informational videos
+
+-   https://www.youtube.com/watch?v=AsNTP8Kwu80
+-   https://www.youtube.com/watch?v=YCzL96nL7j0
+
 ## Repositories
 
 -   https://github.com/Darth-Kronos/Spectrum-Sensing
