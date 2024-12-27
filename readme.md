@@ -8,6 +8,14 @@ The aim of this project will be to take recordings of different frequencies and 
 
 The finished model will take as an input the current occupancy of multiple frequencies and some other features, currently we think this would be time, geolocation and date. The model will then predict the occupancy of each frequency and return this as a result providing an easy way to find the best frequency to form a connection over due to it's low occupancy rate.
 
+## Convolutional layer
+
+A convolutional layer is used to find patterns and relations between data. The data can be changed using a FFT but the neural network should be able to figure out the relations by itself using convolution. Another example of convolution is that the model can tweak the weights of it's output to get an optimal reading.
+
+## LTSM model
+
+The long short term memory model was chosen for it's effectiveness for predicting future observations based on prior knowledge. It takes the last couple of values to predict the next value. For our purpose this should work well.
+
 # Notes
 
 Some additional information for understanding the taken approach and gotten results.
@@ -22,6 +30,7 @@ Some additional information for understanding the taken approach and gotten resu
 
 -   https://www.youtube.com/watch?v=AsNTP8Kwu80
 -   https://www.youtube.com/watch?v=YCzL96nL7j0
+-   https://www.youtube.com/watch?v=HGwBXDKFk9I
 
 ## Repositories
 
@@ -49,4 +58,5 @@ Some additional information for understanding the taken approach and gotten resu
 
 # Todo
 
--   Display the occupancy by frequency and time in a heatmap
+-   Convert the model to use convolution instead of having training data in bins
+-   Make successful predictions on testing data which channels are occupied
