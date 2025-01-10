@@ -26,6 +26,7 @@ def show_graph_loss(loss_history, num_epochs, label="avg", filename="loss"):
 def show_graph_model(model, test_data, device, filename="model"):
     # Example model and input
     x = torch.FloatTensor(test_data).to(device).unsqueeze(0)
+
     y = model(x)
 
     # Generate and save the graph

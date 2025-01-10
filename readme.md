@@ -2,6 +2,18 @@
 
 This repository is related to my thesis project where I will attempt to predict occupancy of certain frequencies using generative AI.
 
+# How to run
+
+To run this project jupyter notebook is used which runs python in behind a clear graphical user interface. The dependencies needed to run everything are
+
+-   Jupyter notebook (https://jupyter.org/) - follow steps to install or when using VSCode install the extension and you are ready to go
+-   Pytorch (https://pytorch.org/get-started/locally/) - follow steps in Pytorch documentation to download the proper version for system specs
+-   h5py (https://www.h5py.org/) - run `pip install h5py`
+-   torchviz (https://github.com/szagoruyko/pytorchviz) - run `pip install torchviz`
+-   matplotlib (https://matplotlib.org/) - run `pip install matplotlib`
+
+After installing this open one of the models in `src/{MODEL}_model.ipynb` and run the file
+
 # Description
 
 The aim of this project will be to take recordings of different frequencies and meassuring the occupancy and comparing this to multiple chosen features. Then an AI model will be trained on this model to make predictions on future occupancy of a certain frequency creating a more efficient way to find frequencies with low occupancy. This will aid in situations where this is high interference from other radio signals, for instance for Wi-Fi in a crowded urban area like an apartment block.
@@ -15,6 +27,10 @@ A convolutional layer is used to find patterns and relations between data. The d
 ## LTSM model
 
 The long short term memory model was chosen for it's effectiveness for predicting future observations based on prior knowledge. It takes the last couple of values to predict the next value. For our purpose this should work well.
+
+## SVM model
+
+After reading some papers I found out that SVM models can work very well to classify occupancy channels from a sequence of IQ samples. For this reason I have also included this model. It's simplicity makes it a great pick to play around with. SVM is also combined with simple convolution to increase accuracy.
 
 # Notes
 
