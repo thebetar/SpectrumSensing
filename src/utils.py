@@ -3,13 +3,15 @@ from torchviz import make_dot
 import torch
 
 
-def show_graph_loss(loss_history, num_epochs, label="avg", filename="loss"):
+def show_graph_loss(
+    loss_history, num_epochs, plot_label="Convolution", label="avg", filename="loss"
+):
     # Evaluate the model
     plt.plot(loss_history)
 
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
-    plt.title(f"Convolution training Loss ({label})")
+    plt.title(f"{plot_label} training Loss ({label})")
 
     plt.xlim(0, num_epochs)
     plt.ylim(0, max(1, max(loss_history)))
