@@ -74,5 +74,5 @@ Some additional information for understanding the taken approach and gotten resu
 
 # Todo
 
--   Convert the model to use convolution instead of having training data in bins
--   Make successful predictions on testing data which channels are occupied
+-   Add spectrogram images to thesis document to describe better what data went in and what prediction came out
+-   Add formulas using latex to document to describe how LSTM, SVM, convolution, etc. works.
