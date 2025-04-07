@@ -1,6 +1,6 @@
-import matplotlib.pyplot as plt
-from torchviz import make_dot
 import torch
+import netron
+import matplotlib.pyplot as plt
 
 
 def show_graph_loss(
@@ -29,7 +29,10 @@ def show_graph_model(model, test_data, device, filename="model"):
     # Example model and input
     x = torch.FloatTensor(test_data).to(device).unsqueeze(0)
 
-    y = model(x)
-
     # Generate and save the graph
-    make_dot(y, params=dict(model.named_parameters())).render(filename, format="png")
+    torch.onnx.export(
+        model, x, filename + ".onnx", input_names=["input"], output_names=["output"]
+    )
+
+    # Convert the ONNX model to PNG
+    netron.start()
