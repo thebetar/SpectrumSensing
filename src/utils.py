@@ -1,6 +1,7 @@
 import torch
 import netron
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def show_graph_loss(
@@ -36,3 +37,43 @@ def show_graph_model(model, test_data, device, filename="model"):
 
     # Convert the ONNX model to PNG
     netron.start()
+
+
+def log_accuracy(
+    model,
+    label,
+    data,
+    accuracy,
+    training_time,
+    num_epochs,
+    avg_response_time,
+    avg_loss,
+    min_loss,
+    max_loss,
+    sampling_rate=1,
+):
+    accuracy_df = pd.read_csv("../docs/results/accuracy.csv")
+
+    accuracy_df = pd.concat(
+        [
+            accuracy_df,
+            pd.DataFrame(
+                [
+                    {
+                        "model": model,
+                        "label": label,
+                        "accuracy": accuracy * 100,
+                        "training_time": training_time,
+                        "epochs": num_epochs,
+                        "avg_response_time": avg_response_time,
+                        "avg_loss": avg_loss,
+                        "min_loss": min_loss,
+                        "max_loss": max_loss,
+                        "sequence_length": data.shape[1],
+                        "sampling_rate": sampling_rate,
+                    }
+                ]
+            ),
+        ]
+    )
+    accuracy_df.to_csv("../docs/results/accuracy.csv", index=False)

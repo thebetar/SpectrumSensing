@@ -1,0 +1,47 @@
+Creating the usrp device with: addr=192.168.30.2...
+[INFO] [UHD] linux; GNU C++ version 9.2.1 20200304; Boost_107100; UHD_3.15.0.0-2build5
+[INFO] [X300] X300 initialization sequence...
+[INFO] [X300] Maximum frame size: 8000 bytes.
+[INFO] [X300] Radio 1x clock: 200 MHz
+[INFO] [0/DmaFIFO_0] Initializing block control (NOC ID: 0xF1F0D00000000000)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1303 MB/s)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1312 MB/s)
+[INFO] [0/Radio_0] Initializing block control (NOC ID: 0x12AD100000000001)
+[INFO] [0/Radio_1] Initializing block control (NOC ID: 0x12AD100000000001)
+[INFO] [0/DDC_0] Initializing block control (NOC ID: 0xDDC0000000000000)
+[INFO] [0/DDC_1] Initializing block control (NOC ID: 0xDDC0000000000000)
+[INFO] [0/DUC_0] Initializing block control (NOC ID: 0xD0C0000000000000)
+[INFO] [0/DUC_1] Initializing block control (NOC ID: 0xD0C0000000000000)
+Lock mboard clocks: internal
+subdev set to: A:0 B:0
+Using Device: Single USRP:
+  Device: X-Series Device
+  Mboard 0: X310
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: UBX RX
+  RX Channel: 1
+    RX DSP: 0
+    RX Dboard: B
+    RX Subdev: UBX RX
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: UBX TX
+  TX Channel: 1
+    TX DSP: 0
+    TX Dboard: B
+    TX Subdev: UBX TX
+
+RX Channel: 0
+Actual RX Rate: 100.000000 Msps...
+Actual RX Freq: 2462.000000 MHz...
+Actual RX Gain: 10.000000 dB...
+TX Channel: 0
+Actual TX Rate: 100.000000 Msps...
+Actual TX Freq: 2000.000000 MHz...
+Actual TX Gain: 30.000000 dB...
+Checking TX: TXLO: locked ...
+Press Ctrl + C to stop streaming...
+

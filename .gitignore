@@ -1,6 +1,10 @@
+data/dataset_india_big.csv
 data/binary
 data/h5
-data/dataset_india_big.csv
 data/*.hdf5
+
+data/experiment/binary
+data/experiment/h5
+data/experiment/*.hdf5
 
 .env
