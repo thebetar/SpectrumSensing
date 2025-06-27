@@ -1,0 +1,4 @@
+-   First experiment was to get two channels next to each other (channels 1 and 6 were being used for transmission)
+-   Second experiment was to get two channels with a single channel in between (channels 1 and 11 were being used for transmission)
+-   Third experiment was to create noise, the antenna was removed from the SDR
+-   Fourth experiment was to create noise, the signal strength got reduced

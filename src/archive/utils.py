@@ -53,7 +53,7 @@ def log_accuracy(
     max_loss,
     sampling_rate=1,
 ):
-    accuracy_df = pd.read_csv("../docs/results/accuracy.csv")
+    accuracy_df = pd.read_csv("../../docs/results/accuracy.csv")
 
     accuracy_df = pd.concat(
         [
@@ -77,7 +77,7 @@ def log_accuracy(
             ),
         ]
     )
-    accuracy_df.to_csv("../docs/results/accuracy.csv", index=False)
+    accuracy_df.to_csv("../../docs/results/accuracy.csv", index=False)
 
 
 def run_tests(model, criterion, X_test, y_test, batch_size, device):
